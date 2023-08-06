@@ -474,7 +474,7 @@
 
         &__contents {
             padding-block: vw(25px) vw(50px);
-            padding-inline: 5%;
+            padding-inline: 5% 0;
         }
 
         &__studio {
@@ -575,6 +575,7 @@
                 }
 
                 &.no-slide {
+
                     .swiper-slide {
                         margin-right: 20px;
                         width: 90%;
