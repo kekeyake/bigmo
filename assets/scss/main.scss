@@ -148,4 +148,26 @@
             font-style: normal;
         }
     }
+    .swiper-container {
+        overflow: hidden;
+    }
+    .webtoonSwiper {     
+        .swiper-wrapper {
+            &.no-slide {
+                .swiper-slide:last-child {
+                    margin-right: 0;
+                }
+            }
+        }   
+        .swiper-slide {
+            flex-shrink: 0;
+            // width: calc((100% - 4 * 2.34%) / 5); /* Calculate the slide width with gap included */
+            box-sizing: border-box;
+            border-radius: 8px;
+            overflow: hidden;
+            img {
+                width: 100%;
+            }
+        }
+    }
 }

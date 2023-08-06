@@ -26,7 +26,7 @@
             <a href="#a" class="bigmo__nav__item">Bigmo</a>
             <a href="#a" class="bigmo__nav__item">works</a>
             <a href="#a" class="bigmo__nav__item">contact</a>
-            <a href="#a" class="bigmo__nav__item">news</a>
+            <a href="#a" class="bigmo__nav__item">nemainSwiperws</a>
             <a href="#a" class="bigmo__nav__item __settlement"><img src="assets/img/ico_w.png" alt="" width="22">정산</a>
         </nav>
     </header>
@@ -41,7 +41,7 @@
         </p>
     </section>
     <section class="bigmoMain__slide">
-        <div class="swiper-container mySwiper">
+        <div class="swiper-container mainSwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide slide01"></div>
                 <div class="swiper-slide slide02"></div>
@@ -64,11 +64,11 @@
             <a href="#a" class="mainContents__moreBtn">view <em>more</em></a>
             <div class="swiper-container webtoonSwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide slide01"></div>
-                    <div class="swiper-slide slide02"></div>
-                    <div class="swiper-slide slide03"></div>
-                    <div class="swiper-slide slide04"></div>
-                    <div class="swiper-slide slide05"></div>
+                    <div class="swiper-slide slide01"><img src="assets/img/main/webtoon1.png" alt="" width="284"></div>
+                    <div class="swiper-slide slide02"><img src="assets/img/main/webtoon2.png" alt="" width="284"></div>
+                    <!-- <div class="swiper-slide slide03"><img src="assets/img/main/webtoon3.png" alt="" width="284"></div>
+                    <div class="swiper-slide slide04"><img src="assets/img/main/webtoon4.png" alt="" width="284"></div>
+                    <div class="swiper-slide slide05"><img src="assets/img/main/webtoon5.png" alt="" width="284"></div> -->
                 </div>
             </div>
         </article>
@@ -84,7 +84,7 @@
         /**
          * main slide swiper
          */
-        let swiper = new Swiper('.mySwiper', {
+        let mainSwiper = new Swiper('.mainSwiper', {
             loop: true,
             // loopFill: 'clone',
             autoHeight: true,
@@ -108,6 +108,34 @@
             observeParents: true,
         });
 
+
+        let swiperContainer = document.querySelector(".webtoonSwiper");
+        let swiperSlides = swiperContainer.querySelectorAll(".swiper-slide");
+        if ( swiperSlides.length >= 3 ) {
+            let webtoonSwiper = new Swiper('.webtoonSwiper',{
+                loop: true,            
+                autoHeight: true,
+                spaceBetween: 35,
+                slidesPerView: "5",
+                slideToClickedSlide: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                observer: true,
+                observeParents: true,
+            });
+        } else {
+            // If there are less than two slides, disable swiper functionality and show all slides
+            swiperSlides.forEach(function (slide) {
+                slide.style.display = "block";
+                slide.style.width = "14.79%";
+            });
+            var swiperWrapper = swiperContainer.querySelector(".swiper-wrapper");
+            swiperWrapper.classList.add('no-slide');
+            
+        }
+        
 
     </script>
 </body>
