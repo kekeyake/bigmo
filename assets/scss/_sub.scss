@@ -27,6 +27,10 @@
     border-bottom: 1px solid #EDEDED;
     padding-inline: 20%;
     justify-content: space-between;
+
+    @media (min-width: 1024px) and (max-width: 1400px) {
+      padding-inline: 10%;
+    }
   }
 
   &__tabLink {
@@ -48,6 +52,37 @@
         left: 0;
         bottom: -1px;
       }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .bigmoSub {
+    &__top {
+      height: vw(200px);
+      padding-top: vw(150px);
+    }
+
+    &__h1 {
+      font-size: vw(20px);
+      padding-left: 10%;
+    }
+
+    &__h2 {
+      text-transform: uppercase;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 46px;
+    }
+
+    &__tab {
+      padding-inline: 0;
+      justify-content: center;
+    }
+
+    &__tabLink {
+      font-size: vw(14px);
+      padding: vw(10px);
     }
   }
 }

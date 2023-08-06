@@ -490,6 +490,11 @@ body.open {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .bigmoSub__tab {
+    padding-inline: 10%;
+  }
+}
 .bigmoSub__tabLink {
   font-weight: 700;
   color: #747474;
@@ -510,6 +515,32 @@ body.open {
   bottom: -1px;
 }
 
+@media (max-width: 1023px) {
+  .bigmoSub__top {
+    height: 62.5vw;
+    padding-top: 46.875vw;
+  }
+  .bigmoSub__h1 {
+    font-size: 6.25vw;
+    padding-left: 10%;
+  }
+  .bigmoSub__h2 {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+  }
+  .bigmoSub__tab {
+    padding-inline: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .bigmoSub__tabLink {
+    font-size: 4.375vw;
+    padding: 3.125vw;
+  }
+}
 .bigmoContact {
   padding-bottom: 160px;
 }
@@ -563,4 +594,49 @@ body.open {
 .bigmoContact__info dd {
   font-size: 16px;
   font-weight: 500;
+}
+
+@media (max-width: 1023px) {
+  .bigmoContact {
+    padding-bottom: 15.625vw;
+  }
+  .bigmoContact__cont {
+    padding: 9.375vw 3.125vw;
+    margin-top: 0;
+  }
+  .bigmoContact__cont .t1 {
+    font-size: 5vw;
+    line-height: 6.25vw;
+  }
+  .bigmoContact__cont .t2 {
+    font-size: 3.75vw;
+    line-height: 6.25vw;
+    margin-top: 6.25vw;
+  }
+  .bigmoContact__map {
+    min-height: 78.125vw;
+    margin-top: 6.25vw;
+  }
+  .bigmoContact__info {
+    padding: 4.6875vw 3.125vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3.125vw;
+  }
+  .bigmoContact__info div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .bigmoContact__info dt {
+    font-size: 4.375vw;
+    margin-right: 1.5625vw;
+  }
+  .bigmoContact__info dd {
+    font-size: 3.75vw;
+  }
 }

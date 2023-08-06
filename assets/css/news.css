@@ -490,6 +490,11 @@ body.open {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .bigmoSub__tab {
+    padding-inline: 10%;
+  }
+}
 .bigmoSub__tabLink {
   font-weight: 700;
   color: #747474;
@@ -510,6 +515,32 @@ body.open {
   bottom: -1px;
 }
 
+@media (max-width: 1023px) {
+  .bigmoSub__top {
+    height: 62.5vw;
+    padding-top: 46.875vw;
+  }
+  .bigmoSub__h1 {
+    font-size: 6.25vw;
+    padding-left: 10%;
+  }
+  .bigmoSub__h2 {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+  }
+  .bigmoSub__tab {
+    padding-inline: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .bigmoSub__tabLink {
+    font-size: 4.375vw;
+    padding: 3.125vw;
+  }
+}
 .bigmoNews {
   padding-bottom: 160px;
 }

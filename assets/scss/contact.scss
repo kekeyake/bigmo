@@ -63,3 +63,50 @@
     }
   }
 }
+
+@media (max-width: 1023px) {
+  .bigmoContact {
+    padding-bottom: vw(50px);
+
+    &__cont {
+      padding: vw(30px) vw(10px);
+      margin-top: 0;
+
+      .t1 {
+        font-size: vw(16px);
+        line-height: vw(20px);
+      }
+
+      .t2 {
+        font-size: vw(12px);
+        line-height: vw(20px);
+        margin-top: vw(20px);
+      }
+    }
+
+    &__map {
+      min-height: vw(250px);
+      margin-top: vw(20px);
+    }
+
+    &__info {
+      padding: vw(15px) vw(10px);
+      flex-direction: column;
+      gap: vw(10px);
+
+      div {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      dt {
+        font-size: vw(14px);
+        margin-right: vw(5px);
+      }
+
+      dd {
+        font-size: vw(12px);
+      }
+    }
+  }
+}
