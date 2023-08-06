@@ -1,4 +1,11 @@
-@use "function";
+@use "function" as *;
 @use "base";
 @use "header";
 @use "footer";
+
+body {
+  &.open {
+    height: 100vh;
+    overflow: hidden;
+  }
+}

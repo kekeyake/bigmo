@@ -18,10 +18,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="preload" media="screen" href="assets/css/main.css" as="style" />
     <link rel="stylesheet" media="screen" href="assets/css/main.css" />
+</head>
 
 <body class="bigmo">
     <header class="bigmo__header">
-        <a href="/"><img src="assets/img/logo.png" alt="비그모" width="150"></a>
+        <a href="/"><img src="assets/img/logo.png" alt="비그모" width="150" class="logo"></a>
         <nav class="bigmo__nav">
             <a href="#a" class="bigmo__nav__item">Bigmo</a>
             <a href="#a" class="bigmo__nav__item">works</a>
@@ -29,53 +30,192 @@
             <a href="#a" class="bigmo__nav__item">nemainSwiperws</a>
             <a href="#a" class="bigmo__nav__item __settlement"><img src="assets/img/ico_w.png" alt="" width="22">정산</a>
         </nav>
+        <button class="bigmo__mBtn m" id="mBtn"></button>
+        <nav class="bigmo__mNav">
+            <button class="bigmo__mNav__item">Bigmo</button>
+            <div class="bigmo__mNav__sub">
+                <a href="#a" class="bigmo__mNav__link">소개</a>
+                <a href="#a" class="bigmo__mNav__link">연혁</a>
+                <a href="#a" class="bigmo__mNav__link">비전</a>
+                <a href="#a" class="bigmo__mNav__link">프로덕션</a>
+                <a href="#a" class="bigmo__mNav__link">파트너사</a>
+            </div>
+            <button class="bigmo__mNav__item">works</button>
+            <div class="bigmo__mNav__sub">
+                <a href="#a" class="bigmo__mNav__link">웹툰</a>
+                <a href="#a" class="bigmo__mNav__link">웹소설</a>
+                <a href="#a" class="bigmo__mNav__link">캐릭터</a>
+                <a href="#a" class="bigmo__mNav__link">게임</a>
+            </div>
+            <button class="bigmo__mNav__item">contact</button>
+            <div class="bigmo__mNav__sub">
+                <a href="#a" class="bigmo__mNav__link">주소/연락처</a>
+                <a href="#a" class="bigmo__mNav__link">문의</a>
+            </div>
+            <button class="bigmo__mNav__item">news</button>
+            <div class="bigmo__mNav__sub">
+                <a href="#a" class="bigmo__mNav__link">공지사항</a>
+                <a href="#a" class="bigmo__mNav__link">뉴스</a>
+                <a href="#a" class="bigmo__mNav__link">갤러리</a>
+            </div>
+            <a href="#a" class="bigmo__mNav__item __settlement"><img src="assets/img/ico_w.png" alt="" width="22">정산</a>
+        </nav>
     </header>
-    <section class="bigmoMain__visual">
-        <h1 class="t1">
-            <strong>BIGMO</strong>
-            INTRODUCTION
-        </h1>
-        <p class="t2">
-            “비그모”는 가장 이상적인 그래픽 관리조직으로 [Best Ideal Graphic Manage Organize]의 <br class="pc_br">
-            약자 B.I.G.M.O를 뜻하고 지향하는 디지털 콘텐츠 제작 및 유통 전문 기업입니다.
-        </p>
-    </section>
-    <section class="bigmoMain__slide">
-        <div class="swiper-container mainSwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide slide01"></div>
-                <div class="swiper-slide slide02"></div>
-                <div class="swiper-slide slide03"></div>
-                <div class="swiper-slide slide04"></div>
-                <div class="swiper-slide slide05"></div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-        </div>
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev">PREV</div>
-        <div class="swiper-button-next">NEXT</div>
-        <p class="t1">비그모는 웹소설과 웹툰을 제작·유통하고, 확보된 IP를 기반으로 영화 · 드라마 · 게임 · 뮤지컬 등<br class="pc_br"> 다양한 분야로 확장해 나가고 있는 콘텐츠
-            전문 기업입니다.</p>
-    </section>
-    <section class="bigmoMain__contents mainContents">
-        <article>
-            <h2 class="bigmoMain__h2"><span>web</span>toon</h2>
-            <a href="#a" class="mainContents__moreBtn">view <em>more</em></a>
-            <div class="swiper-container webtoonSwiper">
+    <main class="bigmoMain">
+        <section class="bigmoMain__visual">
+            <h1 class="t1">
+                <strong>BIGMO</strong>
+                INTRODUCTION
+            </h1>
+            <p class="t2">
+                “비그모”는 가장 이상적인 그래픽 관리조직으로 [Best Ideal Graphic Manage Organize]의 <br class="pc_br">
+                약자 B.I.G.M.O를 뜻하고 지향하는 디지털 콘텐츠 제작 및 유통 전문 기업입니다.
+            </p>
+        </section>
+        <section class="bigmoMain__slide">
+            <div class="swiper-container mainSwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide slide01"><img src="assets/img/main/webtoon1.png" alt="" width="284"></div>
-                    <div class="swiper-slide slide02"><img src="assets/img/main/webtoon2.png" alt="" width="284"></div>
-                    <!-- <div class="swiper-slide slide03"><img src="assets/img/main/webtoon3.png" alt="" width="284"></div>
-                    <div class="swiper-slide slide04"><img src="assets/img/main/webtoon4.png" alt="" width="284"></div>
-                    <div class="swiper-slide slide05"><img src="assets/img/main/webtoon5.png" alt="" width="284"></div> -->
+                    <div class="swiper-slide slide01"></div>
+                    <div class="swiper-slide slide02"></div>
+                    <div class="swiper-slide slide03"></div>
+                    <div class="swiper-slide slide04"></div>
+                    <div class="swiper-slide slide05"></div>
                 </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
             </div>
-        </article>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev pc_br">PREV</div>
+            <div class="swiper-button-next pc_br">NEXT</div>
+            <p class="t1">비그모는 웹소설과 웹툰을 제작·유통하고, 확보된 IP를 기반으로 영화 · 드라마 · 게임 · 뮤지컬 등<br class="pc_br"> 다양한 분야로 확장해 나가고 있는
+                콘텐츠
+                전문 기업입니다.</p>
+        </section>
+        <section class="bigmoMain__contents mainContents">
+            <article class="mainContents__webtoon">
+                <h2 class="bigmoMain__h2"><span>web</span>toon</h2>
+                <a href="#a" class="mainContents__moreBtn">view <em>more</em></a>
+                <div class="swiper-container webtoonSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide01"><img src="assets/img/main/webtoon1.png" alt="" width="284">
+                        </div>
+                        <div class="swiper-slide slide02"><img src="assets/img/main/webtoon2.png" alt="" width="284">
+                        </div>
+                        <div class="swiper-slide slide03"><img src="assets/img/main/webtoon3.png" alt="" width="284">
+                        </div>
+                        <div class="swiper-slide slide04"><img src="assets/img/main/webtoon4.png" alt="" width="284">
+                        </div>
+                        <div class="swiper-slide slide05"><img src="assets/img/main/webtoon5.png" alt="" width="284">
+                        </div>
+                    </div>
+                </div>
+            </article>
 
-        <h2 class="bigmoMain__h2"><span>web</span>novel</h2>
-    </section>
+            <article class="mainContents__webnovel">
+                <h2 class="bigmoMain__h2"><span>web</span>novel</h2>
+                <a href="#a" class="mainContents__moreBtn">view <em>more</em></a>
+                <div class="swiper-container webnovelSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide01"><img src="assets/img/main/webnovel1.png" alt="" width="284">
+                        </div>
+                        <div class="swiper-slide slide02"><img src="assets/img/main/webnovel2.png" alt="" width="284">
+                        </div>
+                        <!-- <div class="swiper-slide slide03"><img src="assets/img/main/webnovel3.png" alt="" width="284">
+                        </div>
+                        <div class="swiper-slide slide04"><img src="assets/img/main/webnovel4.png" alt="" width="284">
+                        </div>
+                        <div class="swiper-slide slide05"><img src="assets/img/main/webnovel5.png" alt="" width="284">
+                        </div> -->
+                    </div>
+                </div>
+            </article>
 
+        </section>
+        <section class="bigmoMain__studio">
+            <h2 class="bigmoMain__h2"><span>bigmo</span>studio</h2>
+            <div class="bigmoMain__studio__bg">
+                <p class="t1">
+                    원 데스크 멀티 제작시스템[One Desk Multi Production System]은 <br class="pc_br">
+                    비그모가 가진 강력한 콘텐츠 IP 및 작가 네트워크를 통해 성장합니다.
+                </p>
+                <p class="t1">언제나 작가님들의 이야기를 듣겠습니다.</p>
+                <a href="#a" class="contactUsBtn">conatact us</a>
+                <img src="assets/img/main/img_studio.png" alt="" class="ico" width="624">
+            </div>
+        </section>
+        <section class="bigmoMain__news mainNews">
+            <header class="mainNews__header">
+                <div class="box">
+                    <h2 class="bigmoMain__h2">
+                        <span>new</span>s
+                    </h2>
+                    <a href="#a" class="mainNews__moreBtn">view <em>more</em></a>
+                </div>
+
+                <p class="t1">
+                    비그모의 다양한 소식들을 <br class="pc_br">
+                    여러분께 안내드립니다.
+                </p>
+            </header>
+            <div class="mainNews__list">
+                <a href="#a" class="mainNews__link">
+                    <img src="assets/img/main/news1.png" alt="" width="380">
+                    <div class="mainNews__info">
+                        <p class="t1">부천시, 네이버웹툰과 '2022 모든웹툰 공모전' 6월 개최</p>
+                        <span class="date">2023.07.18</span>
+                    </div>
+                </a>
+                <a href="#a" class="mainNews__link">
+                    <img src="assets/img/main/news2.png" alt="" width="380">
+                    <div class="mainNews__info">
+                        <p class="t1">[K-FEST 2023] 러시아에서 웹툰의 매력을 선보이다!</p>
+                        <span class="date">2023.07.15</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="bigmoMain__feed mainFeed">
+            <h2 class="bigmoMain__h2"><span>social</span>feed</h2>
+            <div class="mainFeed__wrap">
+                <ul class="mainFeed__list">
+                    <li class="mainFeed__item">
+                        <img src="assets/img/main/feed1.png" alt="">
+                        <p class="t1">#만화 #비그모 #웹툰 #독서 #책</p>
+                    </li>
+                    <li class="mainFeed__item">
+                        <img src="assets/img/main/feed2.png" alt="">
+                        <p class="t1">#판타지 #판타지세계 #초대 #fantasyworld </p>
+                    </li>
+                    <li class="mainFeed__item">
+                        <img src="assets/img/main/feed3.png" alt="">
+                        <p class="t1">#칼세이건 #우주 #명언 #비그모</p>
+                    </li>
+                    <li class="mainFeed__item">
+                        <img src="assets/img/main/feed4.png" alt="">
+                        <p class="t1">#비그모 #책 #만화 #소설</p>
+                    </li>
+                    <li class="mainFeed__item">
+                        <img src="assets/img/main/feed5.png" alt="">
+                        <p class="t1">#프랑스 #노벨문학상 #소설</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="bigmo__footer footer">
+        <img src="assets/img/f_logo.png" alt="bigmo" class="footer__logo" width="87">
+        <section class="footer__info">
+            (주) 비그모 ㅣ 대표 : 이우림 <br>
+            사업자등록번호 : 888-81-02426 ㅣ<br class="m_br"> 이메일 : info@bigmo.studio
+
+            <p class="copyright">Copyright © <b>BIGMO</b>. All Right Reserved.</p>
+        </section>
+        <nav class="footer__nav">
+            <a href="#a" class="footer__link">개인정보처리방침</a>
+            <a href="#a" class="footer__link">이용약관</a>
+            <a href="#a" class="footer__link">이메일무단수집거부</a>
+        </nav>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
         integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -86,7 +226,6 @@
          */
         let mainSwiper = new Swiper('.mainSwiper', {
             loop: true,
-            // loopFill: 'clone',
             autoHeight: true,
             centeredSlides: true,
             slidesPerView: "auto",
@@ -94,48 +233,105 @@
             effect: 'coverflow',
             coverflowEffect: {
                 rotate: 0,
-                depth: 500,
-                stretch: 80,
+                depth: 400,
+                stretch: 0,
             },
+            navigation: false,
             pagination: {
                 el: ".swiper-pagination",
             },
-            navigation: {   // 버튼
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+            breakpoints: {
+                // 1023px 이하일 때
+                1023: {
+                    slidesPerView: "auto",
+                    navigation: {   // 버튼
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    coverflowEffect: {
+                        rotate: 0,
+                        depth: 500,
+                        stretch: 80,
+                    },
+                },
             },
             observer: true,
             observeParents: true,
         });
 
 
-        let swiperContainer = document.querySelector(".webtoonSwiper");
-        let swiperSlides = swiperContainer.querySelectorAll(".swiper-slide");
-        if ( swiperSlides.length >= 3 ) {
-            let webtoonSwiper = new Swiper('.webtoonSwiper',{
-                loop: true,            
+        let swiperWebtoon = document.querySelector(".webtoonSwiper");
+        let webtoonWrapper = swiperWebtoon.querySelector(".swiper-wrapper");
+        let webtoonSlides = swiperWebtoon.querySelectorAll(".swiper-slide");
+        if (webtoonSlides.length >= 3) {
+            let swiperWebtoon = new Swiper('.webtoonSwiper', {
+                loop: true,
                 autoHeight: true,
-                spaceBetween: 35,
-                slidesPerView: "5",
+                slidesPerView: "auto",
+                spaceBetween: 20,
                 slideToClickedSlide: true,
                 autoplay: {
                     delay: 2500,
                     disableOnInteraction: false,
+                },
+                breakpoints: {
+                    // 1023px 이하일 때
+                    1023: {
+                        slidesPerView: "5",
+                        spaceBetween: 35,
+                    },
                 },
                 observer: true,
                 observeParents: true,
             });
         } else {
             // If there are less than two slides, disable swiper functionality and show all slides
-            swiperSlides.forEach(function (slide) {
+            webtoonSlides.forEach(function (slide) {
                 slide.style.display = "block";
-                slide.style.width = "14.79%";
             });
-            var swiperWrapper = swiperContainer.querySelector(".swiper-wrapper");
-            swiperWrapper.classList.add('no-slide');
-            
+            swiperWebtoon.classList.add('scroll');
+            webtoonWrapper.classList.add('no-slide');
         }
-        
+
+        let swiperWebnovel = document.querySelector(".webnovelSwiper");
+        let webnovelWrapper = swiperWebnovel.querySelector(".swiper-wrapper");
+        let webnovelSlides = swiperWebnovel.querySelectorAll(".swiper-slide");
+        if (webnovelSlides.length >= 3) {
+            let swiperWebtoon = new Swiper('.webnovelSwiper', {
+                loop: true,
+                autoHeight: true,
+                slidesPerView: "auto",
+                spaceBetween: 20,
+                slideToClickedSlide: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    // 1023px 이하일 때
+                    1023: {
+                        slidesPerView: "5",
+                        spaceBetween: 35,
+                        autoplay: {
+                            delay: 2500,
+                            disableOnInteraction: false,
+                            reverseDirection: true,
+                        },
+                    },
+                },
+                observer: true,
+                observeParents: true,
+            });
+        } else {
+            // If there are less than two slides, disable swiper functionality and show all slides
+            webnovelSlides.forEach(function (slide) {
+                slide.style.display = "block";
+            });
+            swiperWebnovel.classList.add('scroll');
+
+            webnovelWrapper.classList.add('no-slide');
+        }
+
 
     </script>
 </body>

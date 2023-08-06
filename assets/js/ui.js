@@ -7,4 +7,14 @@ $(function () {
     let headerTop = $(".bigmo__header").offset().top;
     $(".bigmo__header").toggleClass("scroll", headerTop > 0);
   });
+
+  $("#mBtn").on("click", function () {
+    $(this).toggleClass("open");
+    $(".bigmo__mNav").toggleClass("open");
+    $("body").toggleClass("open");
+    $(".logo").toggleClass("invert");
+  });
+  $(".bigmo__mNav__item").on("click", function () {
+    $(this).toggleClass("selected").siblings().removeClass("selected");
+  });
 });
