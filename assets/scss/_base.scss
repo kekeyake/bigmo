@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+.utf-8 {
+    content: "Für charset";
+    /* DO NOT remove this */
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+[class] {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+[class]::before,
+[class]::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+[class]:where(ol, ul) {
+    list-style: none;
+}
+
+[class]:where(button, fieldset, iframe, input, select, textarea) {
+    border: 0;
+}
+
+[class]:where(button, dialog, input, mark, meter, progress) {
+    background-color: transparent;
+}
+
+[class]:where(table) {
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+
+[class]:where(button, input, meter, progress, select, textarea) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: "Poppins", "Apple SD Gothic Neo", Verdana, "Malgun Gothic", dotum, sans-serif;
+}
+
+[class]:where(a) {
+    text-decoration: none;
+}
+
+[class]:where(a):hover {
+    text-decoration: none;
+}
+
+.a11y {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.pc_br {
+    display: block;
+}
+
+.m_br {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+    width: 6px;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #dddddd;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #f6f6f6;
+}
+
+@media (max-width: 768px) {
+    .pc_br {
+        display: none;
+    }
+
+    .m_br {
+        display: block;
+    }
+}

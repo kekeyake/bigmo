@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="AIS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <title>Welcome - BIGMO</title>
+    <meta property="og:url" content="https://*.html">
+    <meta property="og:title" content="...">
+    <meta property="og:description" content="...">
+    <meta property="og:image" content="https://*.jpg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="...">
+    <meta name="twitter:description" content="...">
+    <meta name="twitter:image" content="https://*.jpg">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="preload" media="screen" href="assets/css/main.css" as="style" />
+    <link rel="stylesheet" media="screen" href="assets/css/main.css" />
+
+<body class="bigmo">
+    <header class="bigmo__header">
+        <a href="/"><img src="assets/img/logo.png" alt="비그모" width="150"></a>
+        <nav class="bigmo__nav">
+            <a href="#a" class="bigmo__nav__item">Bigmo</a>
+            <a href="#a" class="bigmo__nav__item">works</a>
+            <a href="#a" class="bigmo__nav__item">contact</a>
+            <a href="#a" class="bigmo__nav__item">news</a>
+            <a href="#a" class="bigmo__nav__item __settlement"><img src="assets/img/ico_w.png" alt="" width="22">정산</a>
+        </nav>
+    </header>
+    <section class="bigmoMain__visual">
+        <h1 class="t1">
+            <strong>BIGMO</strong>
+            INTRODUCTION
+        </h1>
+        <p class="t2">
+            “비그모”는 가장 이상적인 그래픽 관리조직으로 [Best Ideal Graphic Manage Organize]의 <br class="pc_br">
+            약자 B.I.G.M.O를 뜻하고 지향하는 디지털 콘텐츠 제작 및 유통 전문 기업입니다.
+        </p>
+    </section>
+    <section class="bigmoMain__slide">
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide01"></div>
+                <div class="swiper-slide slide02"></div>
+                <div class="swiper-slide slide03"></div>
+                <div class="swiper-slide slide04"></div>
+                <div class="swiper-slide slide05"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev">PREV</div>
+        <div class="swiper-button-next">NEXT</div>
+        <p class="t1">비그모는 웹소설과 웹툰을 제작·유통하고, 확보된 IP를 기반으로 영화 · 드라마 · 게임 · 뮤지컬 등<br class="pc_br"> 다양한 분야로 확장해 나가고 있는 콘텐츠
+            전문 기업입니다.</p>
+    </section>
+    <section class="bigmoMain__contents mainContents">
+        <article>
+            <h2 class="bigmoMain__h2"><span>web</span>toon</h2>
+            <a href="#a" class="mainContents__moreBtn">view <em>more</em></a>
+            <div class="swiper-container webtoonSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide01"></div>
+                    <div class="swiper-slide slide02"></div>
+                    <div class="swiper-slide slide03"></div>
+                    <div class="swiper-slide slide04"></div>
+                    <div class="swiper-slide slide05"></div>
+                </div>
+            </div>
+        </article>
+
+        <h2 class="bigmoMain__h2"><span>web</span>novel</h2>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+        integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/ui.js"></script>
+    <script>
+        /**
+         * main slide swiper
+         */
+        let swiper = new Swiper('.mySwiper', {
+            loop: true,
+            // loopFill: 'clone',
+            autoHeight: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            slideToClickedSlide: true,
+            effect: 'coverflow',
+            coverflowEffect: {
+                rotate: 0,
+                depth: 500,
+                stretch: 80,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            navigation: {   // 버튼
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            observer: true,
+            observeParents: true,
+        });
+
+
+    </script>
+</body>
+
+</html>

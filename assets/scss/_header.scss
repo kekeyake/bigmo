@@ -1,0 +1,43 @@
+.bigmo {
+    &__header {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+        padding: 16px 8.3333%;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        justify-content: space-between;
+        transition: background-color 0.3s ease;
+
+        &.scroll {
+            background-color: rgba(0, 0, 0, .7);
+            transition: background-color 0.3s ease;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+    }
+
+    &__nav__item {
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase;
+
+        &.__settlement {
+            margin-left: -20px;
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 30px;
+            border-radius: 44px;
+            background: #5340F2;
+            gap: 6px;
+            font-size: 16px;
+        }
+    }
+}
