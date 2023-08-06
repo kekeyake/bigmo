@@ -6,6 +6,7 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  letter-spacing: -0.05em;
 }
 
 img {
@@ -358,6 +359,90 @@ img {
 body.open {
   height: 100vh;
   overflow: hidden;
+}
+
+.dialog {
+  position: fixed;
+  left: 0;
+  top: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+}
+.dialog[open] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.dialog__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.thumbLayer__cont {
+  width: 46.35%;
+  height: 53.7%;
+  max-width: 890px;
+  max-height: 580px;
+  position: relative;
+  z-index: 51;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.thumbLayer__info {
+  padding: 60px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.thumbLayer .t1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+.thumbLayer__list {
+  margin-top: 10px;
+}
+.thumbLayer__item {
+  font-size: 14px;
+  font-weight: 600;
+}
+.thumbLayer__summary {
+  margin-top: 30px;
+  color: #747474;
+  font-size: 16px;
+  line-height: 24px;
+}
+.thumbLayer__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: auto;
+  background: #5340F2;
+  color: #fff;
+  font-size: 16px;
+  padding: 14px 50px;
+  font-weight: 700;
 }
 
 .bigmoMain {

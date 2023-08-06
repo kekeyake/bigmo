@@ -15,8 +15,8 @@
   <meta name="twitter:description" content="...">
   <meta name="twitter:image" content="https://*.jpg">
 
-  <link rel="preload" media="screen" href="../assets/css/news.css" as="style" />
-  <link rel="stylesheet" media="screen" href="../assets/css/news.css" />
+  <link rel="preload" media="screen" href="../assets/css/inquire.css" as="style" />
+  <link rel="stylesheet" media="screen" href="../assets/css/inquire.css" />
 </head>
 
 <body class="bigmo">
@@ -60,24 +60,62 @@
       <a href="#a" class="bigmo__mNav__item __settlement"><img src="../assets/img/ico_w.png" alt="" width="22">정산</a>
     </nav>
   </header>
-  <main class="bigmoSub bigmoNews">
+  <main class="bigmoSub bigmoInquire">
     <section class="bigmoSub__top">
-      <h1 class="bigmoSub__h1">news</h1>
+      <h1 class="bigmoSub__h1">contact</h1>
     </section>
     <section class="bigmoSub__tab">
-      <a href="#a" class="bigmoSub__tabLink">뉴스</a>
-      <a href="#a" class="bigmoSub__tabLink selected">갤러리</a>
+      <a href="#a" class="bigmoSub__tabLink">주소/연락처</a>
+      <a href="#a" class="bigmoSub__tabLink selected">문의</a>
     </section>
-    <ul class="bigmoNews__galleryList">
-      <li class="bigmoNews__item"><img src="../assets/img/news/gallery1.png" alt=""></li>
-      <li class="bigmoNews__item"><img src="../assets/img/news/gallery2.png" alt=""></li>
-      <li class="bigmoNews__item"><img src="../assets/img/news/gallery3.png" alt=""></li>
-      <li class="bigmoNews__item"><img src="../assets/img/news/gallery4.png" alt=""></li>
-      <li class="bigmoNews__item"><img src="../assets/img/news/gallery5.png" alt=""></li>
-      <li class="bigmoNews__item"><img src="../assets/img/news/gallery6.png" alt=""></li>
-      <li class="bigmoNews__item"><img src="../assets/img/news/gallery7.png" alt=""></li>
-      <li class="bigmoNews__item"><img src="../assets/img/news/gallery8.png" alt=""></li>
-    </ul>
+    <section class="bigmoInquire__cont">
+      <p class="t1">주식회사 비그모는 <br class="pc_br">
+        협력사들과의 관계에서<br class="pc_br">
+        신용과 신뢰를 가장 중요시 합니다.</p>
+      <p class="t2">제휴를 원하시는 기업, 기관은 문의 주시면 검토 후 연락 드리겠습니다.</p>
+    </section>
+    <section class="bigmoInquire__form">
+      <h2 class="bigmoSub__h2">문의</h2>
+      <form action="" class="form">
+        <ul class="form__list">
+          <li class="form__item">
+            <h3 class="form__h3">관심분야<i class="require">*</i></h3>
+            <div>
+              <select name="" id="">
+                <option value="">관심분야를 선택해주세요.</option>
+              </select>
+            </div>
+          </li>
+          <li class="form__item">
+            <h3 class="form__h3">휴대폰 번호<i class="require">*</i></h3>
+            <div>
+              <input type="text" placeholder="'-'없이 입력해주세요.">
+            </div>
+          </li>
+          <li class="form__item">
+            <h3 class="form__h3">이메일 주소<i class="require">*</i></h3>
+            <div>
+              <input type="text" placeholder="이메일 주소를 입력해주세요.">
+            </div>
+          </li>
+          <li class="form__item">
+            <h3 class="form__h3">이름<i class="require">*</i></h3>
+            <div>
+              <input type="text" placeholder="이름을 입력해주세요.">
+            </div>
+          </li>
+          <li class="form__item">
+            <h3 class="form__h3">문의사항<i class="require">*</i></h3>
+            <div>
+              <textarea name="" id="" cols="30" rows="10" placeholder="문의사항을 입력해주세요."></textarea>
+            </div>
+          </li>
+        </ul>
+
+        <button type="submit" class="subBtn">전송하기</button>
+      </form>
+    </section>
+
   </main>
   <footer class="bigmo__footer footer">
     <img src="../assets/img/f_logo.png" alt="bigmo" class="footer__logo" width="87">

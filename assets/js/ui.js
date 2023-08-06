@@ -17,4 +17,15 @@ $(function () {
   $(".bigmo__mNav__item").on("click", function () {
     $(this).toggleClass("selected").siblings().removeClass("selected");
   });
+
+  if ($(".thumbLayer").length > 0) {
+    $(".bigmoWorks__item").on("click", function () {
+      let clickedImgSrc = $(this).find("img").attr("src");
+      $(".thumbLayer").attr("open", "");
+      $(".thumbLayer img").attr("src", clickedImgSrc);
+    });
+    $(".dialog__bg").on("click", function () {
+      $(this).closest(".thumbLayer").removeAttr("open");
+    });
+  }
 });

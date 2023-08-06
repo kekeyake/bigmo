@@ -1,0 +1,32 @@
+@use "function" as *;
+@import "sub";
+
+.bigmoWorks {
+  padding-bottom: 160px;
+
+  .bigmoSub__top {
+    background: url(../img/works/sub_visual.png) no-repeat center / cover;
+  }
+
+  .bigmoSub__tabLink {
+    width: 50%;
+  }
+
+  &__webtoonList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-inline: 20%;
+    margin-top: 120px;
+  }
+
+  &__item {
+    width: calc((100% - 120px) / 4);
+    border-radius: 8px;
+    display: flex;
+
+    img {
+      width: 100%;
+    }
+  }
+}

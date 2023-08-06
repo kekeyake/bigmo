@@ -15,8 +15,8 @@
   <meta name="twitter:description" content="...">
   <meta name="twitter:image" content="https://*.jpg">
 
-  <link rel="preload" media="screen" href="../assets/css/news.css" as="style" />
-  <link rel="stylesheet" media="screen" href="../assets/css/news.css" />
+  <link rel="preload" media="screen" href="../assets/css/contact.css" as="style" />
+  <link rel="stylesheet" media="screen" href="../assets/css/contact.css" />
 </head>
 
 <body class="bigmo">
@@ -60,24 +60,57 @@
       <a href="#a" class="bigmo__mNav__item __settlement"><img src="../assets/img/ico_w.png" alt="" width="22">정산</a>
     </nav>
   </header>
-  <main class="bigmoSub bigmoNews">
+  <main class="bigmoSub bigmoContact">
     <section class="bigmoSub__top">
-      <h1 class="bigmoSub__h1">news</h1>
+      <h1 class="bigmoSub__h1">contact</h1>
     </section>
     <section class="bigmoSub__tab">
-      <a href="#a" class="bigmoSub__tabLink">뉴스</a>
-      <a href="#a" class="bigmoSub__tabLink selected">갤러리</a>
+      <a href="#a" class="bigmoSub__tabLink selected">주소/연락처</a>
+      <a href="#a" class="bigmoSub__tabLink">문의</a>
     </section>
-    <ul class="bigmoNews__galleryList">
-      <li class="bigmoNews__item"><img src="../assets/img/news/gallery1.png" alt=""></li>
-      <li class="bigmoNews__item"><img src="../assets/img/news/gallery2.png" alt=""></li>
-      <li class="bigmoNews__item"><img src="../assets/img/news/gallery3.png" alt=""></li>
-      <li class="bigmoNews__item"><img src="../assets/img/news/gallery4.png" alt=""></li>
-      <li class="bigmoNews__item"><img src="../assets/img/news/gallery5.png" alt=""></li>
-      <li class="bigmoNews__item"><img src="../assets/img/news/gallery6.png" alt=""></li>
-      <li class="bigmoNews__item"><img src="../assets/img/news/gallery7.png" alt=""></li>
-      <li class="bigmoNews__item"><img src="../assets/img/news/gallery8.png" alt=""></li>
-    </ul>
+    <section class="bigmoContact__cont">
+      <p class="t1">경험과 전문성이 풍부한 Senior 인력이 주축이 되어 <br class="pc_br">
+        다양한 웹툰, 웹소설 하고 있습니다.</p>
+      <p class="t2">급격한 디지털환경의 변화 속에서 끊임없는 자기계발과 풍부한 산업경험을 바탕으로 빠르고 정확하게 프로젝트를 수행합니다.
+        또한 지난 12년간 다양한 분야의 고객사와 함께 프로젝트를 수행하면서, 성공적인 스토리를 만들어 왔습니다.</p>
+      <section class="bigmoContact__map">
+        <!-- * 카카오맵 - 지도퍼가기 -->
+        <!-- 1. 지도 노드 -->
+        <div id="daumRoughmapContainer1691348693695" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+        <!--
+              	2. 설치 스크립트
+              	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+              -->
+        <script charset="UTF-8" class="daum_roughmap_loader_script"
+          src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+        <!-- 3. 실행 스크립트 -->
+        <script charset="UTF-8">
+          new daum.roughmap.Lander({
+            "timestamp": "1691348693695",
+            "key": "2frgf",
+            // "mapWidth": "640",
+            "mapHeight": "500"
+          }).render();
+        </script>
+      </section>
+      <dl class="bigmoContact__info">
+        <div>
+          <dt class="info__dt">주소</dt>
+          <dd class="info__dd">경기도 부천 유성구 테크노로 206, 사무동 2F 204호 (용산동, LG전자)</dd>
+        </div>
+        <div>
+          <dt class="info__dt">전화번호</dt>
+          <dd class="info__dd">032-369-1773</dd>
+        </div>
+        <div>
+          <dt class="info__dt">이메일</dt>
+          <dd class="info__dd">bigmo_leader@naver.com</dd>
+        </div>
+      </dl>
+    </section>
+
   </main>
   <footer class="bigmo__footer footer">
     <img src="../assets/img/f_logo.png" alt="bigmo" class="footer__logo" width="87">
