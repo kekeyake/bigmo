@@ -66,10 +66,10 @@
 
 @media (max-width: 1023px) {
   .bigmoContact {
-    padding-bottom: vw(50px);
+    padding-bottom: vw(30px);
 
     &__cont {
-      padding: vw(30px) vw(10px);
+      padding: vw(30px) vw(10px) 0;
       margin-top: 0;
 
       .t1 {
@@ -96,7 +96,7 @@
 
       div {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
       }
 
       dt {
@@ -105,7 +105,8 @@
       }
 
       dd {
-        font-size: vw(12px);
+        margin-top: vw(5px);
+        font-size: vw(11px);
       }
     }
   }
