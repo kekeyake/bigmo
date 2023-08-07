@@ -37,9 +37,10 @@ body {
 
 .thumbLayer {
   &__cont {
-    width: 46.35%;
+    width: auto;
     height: 53.70%;
     max-width: 890px;
+    min-width: 500px;
     max-height: 580px;
     position: relative;
     z-index: 51;
@@ -47,6 +48,7 @@ body {
     border-radius: 8px;
     overflow: hidden;
     background-color: #fff;
+
   }
 
   &__info {
@@ -87,4 +89,54 @@ body {
     font-weight: 700;
   }
 
+}
+
+@media (max-width: 1023px) {
+  .thumbLayer {
+    &__cont {
+      width: 90%;
+      height: auto;
+      max-width: 100%;
+      min-width: auto;
+      max-height: fit-content;
+      position: relative;
+      flex-direction: column;
+
+      img {
+        width: 60%;
+        margin: 0 auto;
+      }
+    }
+
+    &__info {
+      padding: vw(10px) vw(10px) vw(20px);
+    }
+
+    .t1 {
+      font-size: vw(26px);
+      align-self: center;
+    }
+
+    &__list {
+      margin-top: vw(10px);
+    }
+
+    &__item {
+      font-size: vw(12px);
+    }
+
+    &__summary {
+      margin-top: vw(20px);
+      font-size: vw(12px);
+      line-height: vw(22px);
+    }
+
+    &__link {
+      margin-top: vw(20px);
+      align-self: center;
+      font-size: vw(12px);
+      padding: vw(14px) vw(50px);
+    }
+
+  }
 }
